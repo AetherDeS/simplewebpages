@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Social links profile</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap');
+    @font-face {
+      font-family: "Inter";
+      src: url("assets/fonts/static/Inter-Bold.ttf") format("truetype");
+      font-weight: 700;
+    }
+
+    @font-face {
+      font-family: "Inter";
+      src: url("assets/fonts/static/Inter-SemiBold.ttf") format("truetype");
+      font-weight: 600;
+    }
+
+    @font-face {
+      font-family: "Inter";
+      src: url("assets/fonts/static/Inter-Regular.ttf") format("truetype");
+      font-weight: 400;
+    }
+
+    * {
+      box-sizing: border-box;
+      padding: 0;
+      margin: 0;
+      font-family: Inter, serif;
+    }
+
+    body {
+      background-color: #141414;
+      color: #fff;
+    }
+    
+    .main {
+      width: 100vw;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .center {
+      background-color: #1F1F1F;
+      border-radius: 12px;
+      height: auto;
+      width: auto;
+      padding: 40px;
+      display: flex;
+    }
+    .center * {
+      margin: auto;
+    }
+    .main_window {
+      display: grid;
+    }
+
+    .main_window img {
+      border-radius: 50%;
+      width: 88px;
+      height: 88px;
+      margin-bottom: 26px;
+    }
+    .card-name{
+      margin-bottom: 10px;
+      font-weight: 500;
+      color: #e9e8e8;
+    }
+    .card-geo {
+      color: #C5F72A;
+      font-size: 14px;
+      font-weight: 600;
+      margin-bottom: 24px;
+    }
+    .card-about {
+      font-size: 14px;
+      margin-bottom: 10px;
+      font-weight: 400;
+      color: #bebebe;
+    }
+    .nav-links {
+      display: grid;
+    }
+
+    .nav-links button {
+      background-color: #333;
+      height: 45px;
+      width: 300px;
+      border-style: none;
+      border-radius: 8px;
+      margin-top: 16px;
+      text-decoration: none;
+      color: #cfcfcf;
+      font-weight: 700;
+      font-size: 14px;
+    }
+
+    .nav-links button:hover {
+      background-color: #C5F72A;
+      transition: 0.3s;
+    }
+
+    .nav-links button:hover {
+      color: #333333;
+      cursor: pointer;
+    }
+
+  </style>
+</head>
+
+<body>
+  <div class="main">
+    <div class="center">
+      <div class="main_window">
+        <img src="assets/images/avatar-jessica.jpeg" alt="avatar-jessica">
+        <h2 class="card-name">Jessica Randall</h2>
+        <p class="card-geo">London, United Kingdom</p>
+        <p class="card-about">"Front-end developer and avid reader."</p>
+        <div class="nav-links">
+          <a href="#"><button>GitHub</button></a>
+          <a href="#"><button>Frontend Mentor</button></a>
+          <a href="#"><button>LinkedIn</button></a>
+          <a href="#"><button>Twitter</button></a>
+          <a href="#"><button>Instagram</button></a>
+        </div>
+      </div>
+      <!-- <div class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+        Coded by <a href="#">Your Name Here</a>.
+      </div> -->
+    </div>
+  </div>
+</body>
+
+</html>

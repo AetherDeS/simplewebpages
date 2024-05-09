@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Two buttons</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .holder {
+            background-color: #333;
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .center {
+            background-color: #1d1d1d;
+            height: 300px;
+            width: 500px;
+            border-radius: 20px;
+            display: flex;
+        }
+        .center * {
+            margin: auto;
+        }
+        /* -- Ссылка внутри кнопки -- */
+        .btn-1 {
+            width: 120px;
+            height: 40px;
+            border-style:none;
+            border: 1ps solid #fff;
+            margin-right: -10px;
+            border-radius: 40px;
+            cursor: pointer;
+        }
+        .btn-1-link {
+            text-decoration: none;
+            color: #000;
+        }
+        .btn-1:hover {
+            background-color: #333;
+            color: #fff;
+            border-style: outset;
+            transition: 0.3s;
+        }
+        a:hover {
+            color: #fff;
+        }
+        /* -- Кнопка внутри ссылки -- */
+        .btn-2 {
+            width: 120px;
+            height: 40px;
+            border-style:none;
+            border: 1ps solid #fff;
+            margin-left: -10px;
+            border-radius: 40px;
+            cursor: pointer;
+        }
+        .btn-2:hover {
+            background-color: #333;
+            color: #fff;
+            border-style: outset;
+            transition: 0.3s;
+        }
+    </style>
+</head>
+<body>
+    <div class="holder">
+        <div class="center">
+            <!-- Так делать не стоит -->
+            <button class="btn-1"><a href="https://google.com" class="btn-1-link">Press me</a></button>
+            <a href="https://google.ru" class="btn-2-link"><button class="btn-2">Press me</button></a>
+        </div>
+    </div>
+</body>
+</html>
